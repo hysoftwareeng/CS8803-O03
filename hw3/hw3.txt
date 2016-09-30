@@ -1,0 +1,15 @@
+Policy iteration (PI) is perhaps the most under appreciated algorithm for solving MDPs. Although each iteration is expensive, it generally requires very few iterations to find an optimal policy. In this problem, you'll gain an appreciation for how hard it is to get policy iteration to break a sweat.
+
+Currently, it is not known whether there is an MDP which requires more than a linear number of PI iterations in the number of states of the MDP. Your goal is to create a 30 states MDP that attains at least 15 iterations of PI before the algorithm terminates. No partial credit will be given for less than 15 iterations.
+
+For this assignment, construct an MDP with 30 states and at most 2 actions per state. You may assume the discount factor is 3/4. The MDP may have stochasticity in its transitions.
+
+You should specify the transitions and rewards using four 30 x 30 arrays in the following way: cell (i,j) in…
+
+the first array should specify the probability of transitioning from state i to state j under the first action.
+the second array should specify the probability of transitioning from state i to state j under the second action.
+the third array should specify the reward for transitioning from state i to state j under the first action.
+the fourth array should specify the reward for transitioning from state i to state j under the second action.
+We will be providing a sample MDP and a tool to help you create and test your MDPs locally. Also, the top 10 solutions will be getting 10 points extra credit for this homework. You will be ranked by number of iterations (higher, better), last submission datetime (smaller, better). We will be providing a website where you can see these rankings pseudo-realtime.
+
+Finally, if you're able to obtain more than 31 iterations, please send a self-addressed, stamped envelope to Box 1910, Computer Science Department, Brown University, 115 Waterman St., Providence, RI 02912 for a smiley-face sticker.
