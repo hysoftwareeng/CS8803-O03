@@ -1,3 +1,6 @@
+Homework 3
+
+
 Policy iteration (PI) is perhaps the most under appreciated algorithm for solving MDPs. Although each iteration is expensive, it generally requires very few iterations to find an optimal policy. In this problem, you'll gain an appreciation for how hard it is to get policy iteration to break a sweat.
 
 Currently, it is not known whether there is an MDP which requires more than a linear number of PI iterations in the number of states of the MDP. Your goal is to create a 30 states MDP that attains at least 15 iterations of PI before the algorithm terminates. No partial credit will be given for less than 15 iterations.

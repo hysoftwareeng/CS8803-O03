@@ -1,4 +1,6 @@
 Homework 2: TD Lambda
+
+
 Recall that the TD(λ) estimator for an MDP can be thought of as a weighted combination of the k-step estimators Ek for k ≥ 1. Consider the MDP described by the following state diagram. (Assume the discount factor is γ=1.)
 
 Find a value of λ, strictly less than 1, such that the TD estimate for λ equals that of the TD(1) estimate. Round your answer for λ to three decimal places.

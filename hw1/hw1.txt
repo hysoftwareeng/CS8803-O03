@@ -1,4 +1,6 @@
 Homework 1: DieN
+
+
 The game DieN is played in the following way.
 
 Consider a die with N sides (where N is an integer greater than 1 and less than 30) and a nonempty set B of integers between 1 and N (inclusive). The rules of the game are:
