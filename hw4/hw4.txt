@@ -1,0 +1,80 @@
+HW4 Non-Expansions
+
+
+The convergence of generalized Markov decision processes depends heavily on establishing that value operators are non-expansions. In this problem, you will work with non-expansions to help improve your intuition about this class of operators.
+
+Given a vector v in Rn, where n>0 is odd or even, define median(v) to equal the middle-largest of its components. For example, if v=(6,−42,−19,25,37), then median(v)=6.
+
+Define the L∞ norm of v, denoted ∥v∥∞∥v∥∞, to be the maximum of the absolute values of its components. For example, if v=(6,−42,−19,25,37), then ∥v∥∞−42.
+
+Like max, min, and mean, the median operator is a non-expansion. That is, for all vectors x and y in Rn (with n odd), the following inequality holds:
+
+∣median(x)−median(y)∣≤∥x−y∥∞.
+
+Of course, we know that the L∞ distance of x and y is at least as big as the difference of their medians. But what is the smallest it can actually be? For this homework, given the value of ∣median(x)−median(y)∣, you will determine the minimum possible value of ∥x−y∥∞.
+
+The catch is that you will not be given all the components of x and y: one coordinate of each will be missing. You will need to determine the minimum possible value of ∥x−y∥∞ given that those components could have any integer value in addition to the constraint on ∣median(x)−median(y)∣.
+
+x=(50,200,154,−55,−244,103,−249,−105,???,−146,−80,−242,−76,53,32,−251,199)
+
+y=(164,???,69,−51,−135,136,−199,51,202,−81,10,17,−196,24,242,7,207)
+
+Find the missing components of x and y such that ∣median(x)−median(y)∣=100 and which minimize ∥x−y∥∞. What is the minimum value of ∥x−y∥∞ in this case? Find the max x and y for this problem.
+
+Note: there can be different answers for bestX and bestY but there is only one lowest LInfinityDistance.
+
+Values for missingX and missingY can be limited from -256 to 256
+
+Sample Test Cases
+
+xMissing and yMissing specify the index of the missing integers
+For example
+xP = [1, 2, 3, 4] => [1, 2, ?, 3, 4]
+yP = [4, 6, 7, 8] => [?, 4, 6, 7, 8]
+xMissing = 2
+yMissing = 0
+
+
+Test Case #1
+Input:
+n=3
+xPresent=[-70, 110]
+yPresent=[32, -240]
+xMissing=1
+yMissing=1
+k=115
+
+Output:
+bestX=256
+bestY=-5
+LInfinityDistance=350
+
+
+Test Case #2
+Input:
+n=9
+xPresent=[-167, -204, 195, 255, -206, -135, 165, 239]
+yPresent=[89, -141, 77, 133, -106, 85, -78, 91]
+xMissing=3
+yMissing=5
+k=44
+
+Output:
+bestX=129
+bestY=155
+LInfinityDistance=361
+
+
+Test Case #3
+Input:
+n=7
+xPresent=[212, -190, -93, 189, -211, 130]
+yPresent=[-6, 213, -144, 60, -216, 172]
+xMissing=1
+yMissing=3
+k=108
+
+Output:
+bestX=256
+bestY=22
+LInfinityDistance=218
