@@ -1,0 +1,20 @@
+Homework 5: Bar Brawl
+
+This problem is worth 7 points toward your final grade.
+
+You are the proprietor of an establishment that sells beverages of an unspecified (but delicious) nature. The establishment is frequented by a set P of patrons, one of whom is the instigator and another of whom is the peacemaker.
+
+On a given evening, a subset S ⊆ P is present at the establishment. If the instigator is in S but not the peacemaker, then a fight will break out. If the instigator is not in S or if the peacemaker is in S, then no fight will occur.
+
+You want to predict whether a fight will break out among a subset of the patrons, initially without knowing the identities of the instigator and the peacemaker.
+
+You should develop a KWIK learner for this problem.  You will be given the following input
+int numPatrons
+boolean[][] atEstablishment size = numberOfPatrons by numberOfEpisodes
+boolean[][] fightOccured with size = 1 by numberOfPatrons
+
+For each episode, you should present your learner with the next row of atEstablishment and the corresponding row of fightOccured.  If your learner returns "FIGHT" or "NO FIGHT", continue to next episode.  If your learner returns "I DON’T KNOW", then you should present that pair(atEstablishment, fightOccured) to you learner to learn from.
+
+You will submit a list of strings of the output of from you learner each time it is present with and episode.
+
+The test case will be considered successful if no wrong answers are returned and "I DON'T KNOW" is returned no more than numPatrons * (numPatrons-1) - 1 times.
