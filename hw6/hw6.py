@@ -11,6 +11,7 @@ def two_armed_bandit(gamma, rewardA1, rewardA2, rewardB, p):
     #     step += 1
 
     # infinite geometric series
+    # https://www.khanacademy.org/math/algebra-home/alg-series-and-induction/alg-infinite-geometric-series/v/infinite-geometric-series
     reward = rewardA if rewardA > rewardB else rewardB
     value = reward / (1 - gamma)
 
