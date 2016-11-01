@@ -1,0 +1,46 @@
+Homework 6: Two-Armed Bandit
+
+
+The purpose of this assignment is to explore conditions under which optimal actions in bandit settings are not discovered even under an optimal Bayesian policy.
+
+You are a decision maker in an infinitely repeated bandit setting with discount factor gamma. You have two different arms you can pull. You believe with certainty that arm B pays rewardB dollars per pull. You believe with probability p that arm A pays rewardA1 dollars and with probability 1−p that it pays rewardA2 dollars. (Note that the arms each pay out the same amount per pull: pulling arm A will always result in the same amount, but you are not certain which amount will be paid.)
+
+We will give you values of gamma, rewardA1, rewardA2, rewardB, p.
+
+Find the value of acting optimally in the Bayesian sense given this prior belief state.
+
+
+Example 1
+input
+gamma=0.73428037
+rewardA1=-781.67614568
+rewardA2=568.70051314
+rewardB=-513.42370277
+p=0.29942233
+
+output
+value=618.57526461
+
+
+Example 2
+input
+gamma=0.43628179
+rewardA1=-506.20310580
+rewardA2=918.92511615
+rewardB=760.72160152
+p=0.29383080
+
+output
+value=1349.47140877
+
+
+Example 3
+input
+gamma=0.05005892
+rewardA1=259.33182580
+rewardA2=70.77435017
+rewardB=400.81423125
+p=0.80219240
+
+output
+value=421.93588816
