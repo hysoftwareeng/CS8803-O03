@@ -1,15 +1,18 @@
 def two_armed_bandit(gamma, rewardA1, rewardA2, rewardB, p):
     rewardA = p * rewardA1 + (1 - p) * rewardA2
 
-    max_reward = reward = rewardA if rewardA > rewardB else rewardB
+    # loop while reward is bigger than a threshold
+    # max_reward = reward = rewardA if rewardA > rewardB else rewardB
+    # value = reward
+    # step = 1
+    # while reward > 1e-5:
+    #     reward = max_reward * (gamma ** step)
+    #     value += reward
+    #     step += 1
 
-    value = reward
-    step = 1
-
-    while reward > 1e-5:
-        reward = max_reward * (gamma ** step)
-        value += reward
-        step += 1
+    # infinite geometric series
+    reward = rewardA if rewardA > rewardB else rewardB
+    value = reward / (1 - gamma)
 
     return value
 
